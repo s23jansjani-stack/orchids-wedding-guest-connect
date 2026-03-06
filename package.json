@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://t:eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmNoaWRzIiwic3ViIjoiQHBpZXJyZS9zdG9yYWdlIiwicmVwbyI6IjVjNTJmN2EwLTc2MDMtNDM3Ni1hMjUxLTE1ZWIzY2Q0OTAwNCIsInNjb3BlcyI6WyJnaXQ6cmVhZCIsImdpdDp3cml0ZSJdLCJpYXQiOjE3NzI4MTM4NTIsImV4cCI6MTgwMzkxNzg1Mn0.SvYoPrUeEUtyorF3eZDyl6zRl7hBPGSw914rj9QM-l6cTRJM6wKI9WGP5lAbcy1-hD5n_F8wZes3TooKmHe8zA@orchids.code.storage/5c52f7a0-7603-4376-a251-15eb3cd49004.git"
+    "url": "https://github.com/s23jansjani-stack/orchids-wedding-guest-connect.git"
   },
   "keywords": [],
   "author": "",
@@ -22,10 +22,8 @@
     "express": "^5.2.1",
     "multer": "^2.1.1"
   },
-  "optionalDependencies": {
-    "sqlite3": "^5.1.7"
-  },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "sqlite3": "^5.1.7"
   }
 }
