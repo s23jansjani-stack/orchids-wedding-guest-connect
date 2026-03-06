@@ -18,11 +18,16 @@ const isVercel = !!process.env.POSTGRES_URL;
 // during a Vercel deployment.
 let db;
 if (!isVercel) {
-  // eslint-disable-next-line import/no-extraneous-dependencies
-  const sqlite3 = require('sqlite3').verbose();
+  let sqlite3;
+  try {
+    sqlite3 = require('sqlite3').verbose();
+  } catch (err) {
+    console.error('Failed to load sqlite3 for local development', err);
+  }
   const dataDir = path.join(__dirname, 'data');
   const uploadsDir = path.join(__dirname, 'public', 'uploads');
   fs.mkdirSync(dataDir, { recursive: true });
+
   fs.mkdirSync(uploadsDir, { recursive: true });
   db = new sqlite3.Database(path.join(dataDir, 'wedding_guests.db'));
   db.serialize(() => {
