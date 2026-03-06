@@ -1,0 +1,6 @@
+node_modules
+data
+public/uploads
+# .env # Removed by Orchids to allow .env files
+# .env.local # Removed by Orchids to allow .env files
+# .env*.local # Removed by Orchids to allow .env files

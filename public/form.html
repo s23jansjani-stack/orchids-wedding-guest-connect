@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Pieteikums</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="topbar"><a class="back-btn" href="/">Atpakaļ</a></div>
+
+      <form class="form" id="guest-form">
+        <div>
+          <label for="image">Pievieno bildi</label>
+          <input class="file-picker" id="image" name="image" type="file" accept="image/*" required />
+          <img id="preview" class="preview" alt="Izvēlētā bilde" />
+        </div>
+
+        <div>
+          <label for="name">Tavs vārds</label>
+          <input class="input" id="name" name="name" type="text" autocomplete="name" required />
+        </div>
+
+        <div>
+          <label for="bio">Pastāsti par sevi (Kā tu pazīsti jauno pāri? Ar ko tu nodarbojies? Hobiji?)</label>
+          <textarea class="textarea" id="bio" name="bio" required></textarea>
+        </div>
+
+        <div>
+          <label for="questionnaire_answers">Ko Tu visvairāk gaidi no kāzām - ceremoniju, bāru, vakariņas, dejošana, utt.?''</label>
+          <textarea class="textarea" id="questionnaire_answers" name="questionnaire_answers" required></textarea>
+        </div>
+
+        <button class="primary-btn submit-btn" type="submit">Saglabāt</button>
+        <p id="status" class="message" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <script src="/form.js"></script>
+  </body>
+</html>
